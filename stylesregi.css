@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#questionNumber{
+    background-color: rgba(47, 156, 228, 0.377);
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 400px;
+    color: rgba(0, 0, 0, 0.758);
+    font-family: cursive;
+    text-shadow:
+    -2px -2px 0 #1cb8f6, 
+    2px -2px 0 #2984d8, 
+    -2px 2px 0 #2481ec, 
+    2px 2px 0 #000000;
+    border: dotted rgb(63, 159, 223);
+
+}
+
+/* Áldozat gomb színe, ha le van tiltva */
+#aldozatButton:disabled {
+    background-color: gray; /* Gomb színe, amikor le van tiltva */
+    cursor: not-allowed;
+    pointer-events: none; /* Megakadályozza, hogy kattintani lehessen */
+}
+
+.answer.correct {
+    background-color: rgb(132, 221, 132); /* Helyes válasz zöld */
+}
+
+.answer.incorrect {
+    background-color: rgb(145, 32, 32); /* Helytelen válasz piros */
+}
+
+.answer:active {
+    background-color: #e1e1e1; /* Nyomva tartott gomb szín */
+}
+body {
+    font-family: Arial, sans-serif;
+   background-image:url(ezkell.jpg);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: space;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+}
+
+.container {
+    
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    border: ridge 9px rgb(83, 158, 228) ;
+    background-color: #4fa4f3bd;
+      
+    
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+#modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #015281;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+#close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#close-button:hover,
+#close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: fantasy;
+    text-shadow: 2px 2px 5px rgb(20, 103, 170);
+
+}
+
+#answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Két oszlopos elrendezés */
+    gap: 20px; /* Hézag a válaszok között */
+    margin-bottom: 30px;
+    margin: 50px;
+}
+
+.answer {
+    background-color: #3c85e684; /* Alap háttérszín */
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #000000;
+    font-family: cursive;
+    font-weight: bold;
+}
+.answer:hover {
+    background-color: #00c3ff84 !important; /* Hover alatt is ugyanaz marad */
+    color: #000000 !important; /* Hover szöveg színét is rögzítjük */
+    border: 5px ridge rgb(173, 241, 253) !important; /* Ha szükséges, a szegély is marad */
+}
+
+.answer.correct {
+    background-color: rgb(132, 221, 132);
+}
+
+.answer.incorrect {
+    background-color: rgb(145, 32, 32);
+}
+
+#lifelineContainer {
+    margin-bottom: 20px;
+}
+
+#lifelineContainer button {
+    background-color: #5aa5e29f;
+    color: rgb(52, 79, 197);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    font-family: cursive;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border:double rgb(255, 255, 255) ;
+    width: 40%;
+    border-radius: 360px;
+
+    
+}
+#lifelineContainer button:hover {
+background-color: rgba(87, 74, 228, 0.244);
+color: rgb(5, 82, 118);
+border:double rgb(255, 255, 255) ;
+
+    
+}
+
+#lifelineContainer button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#lives {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lives img {
+    width: 55px;
+    height: 55px;
+    margin: 0 5px;
+}
+
+#googleHelpBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#googleHelpBtn:disabled {
+    background-color: gray; /* Disabled state */
+    cursor: not-allowed;
+}
+#questionImage{
+    border-color:  black 10px;
+    margin: auto;
+}
+img{
+    border:  black 10%;  
+}
+#questionSound{
+    width: 30%;
+    margin: auto;
+}
+hr{
+    border: ridge 5px rgb(72, 151, 225) ; 
+    margin: 10px
+}
+#gif{
+    
+    margin: 5%;
+}

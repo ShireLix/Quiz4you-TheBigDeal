@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reguláris kifejezések weboldal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f4f4f4;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    input {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+    label {
+      font-weight: bold;
+    }
+    .output {
+      margin-top: 1rem;
+      color: green;
+    }
+    .section {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Reguláris kifejezések</h1>
+
+  <div class="section">
+    <h2>Fogalma és felhasználása</h2>
+    <p>A reguláris kifejezések (regular expressions, regex) olyan minták, amelyek segítségével szövegeket kereshetünk, ellenőrizhetünk vagy manipulálhatunk.</p>
+    <p>Felhasználási területek: adatellenőrzés (e-mail, telefonszám), keresés, szövegfeldolgozás stb.</p>
+  </div>
+
+  <div class="section">
+    <h2>Gyakori karakterek a reguláris kifejezésekben</h2>
+    <ul>
+      <li><code>.</code> Bármilyen karakter (újsor kivételével)</li>
+      <li><code>^</code> Sor eleje</li>
+      <li><code>$</code> Sor vége</li>
+      <li><code>\d</code> Számjegy (0-9)</li>
+      <li><code>\w</code> Betű, szám vagy aláhúzásjel</li>
+      <li><code>\s</code> Whitespace karakter</li>
+      <li><code>[]</code> Karakterosztály</li>
+      <li><code>+</code> Egy vagy több előfordulás</li>
+      <li><code>*</code> Nulla vagy több előfordulás</li>
+      <li><code>?</code> Nulla vagy egy előfordulás</li>
+      <li><code>{n}</code> Pontosan n előfordulás</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Példák JavaScriptben</h2>
+    <pre>
+let szamjegy = /\d/;
+let alfanumerikus = /\w/;
+let whitespace = /\s/;
+let almaVagyKorte = /alma|körte/;
+let egySzam = /\d/;
+let tbbSzam = /\d+/;
+let nemKotelezo = /\d?/;
+let barmennyiSzam = /\d*/;
+    </pre>
+  </div>
+
+ 
+
+  <div class="section">
+    <h2>Űrlap ellenőrzés </h2>
+    <label for="js-email">Email:</label>
+    <input type="text" id="js-email">
+    <label for="irszam">Irányítószám:</label>
+    <input type="text" id="irszam">
+    <button onclick="ellenorzes()">Ellenőrzés</button>
+    <div class="output" id="eredmeny"></div>
+  </div>
+
+  <script>
+    function emailEllenorzes(email) {
+      let emailMinta = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+      return emailMinta.test(email);
+    }
+
+    function iranyitoszamEllenorzes(irszam) {
+      let irszamMinta = /^[0-9]{4}$/;
+      return irszamMinta.test(irszam);
+    }
+
+    function ellenorzes() {
+      const email = document.getElementById("js-email").value;
+      const irszam = document.getElementById("irszam").value;
+      let uzenet = "";
+
+      if (emailEllenorzes(email)) {
+        uzenet += "Érvényes e-mail cím.\n";
+      } else {
+        uzenet += "Hibás e-mail cím!\n";
+      }
+
+      if (iranyitoszamEllenorzes(irszam)) {
+        uzenet += "Érvényes irányítószám.";
+      } else {
+        uzenet += "Hibás irányítószám!";
+      }
+
+      document.getElementById("eredmeny").innerText = uzenet;
+    }
+  </script>
+
+</body>
+</html>

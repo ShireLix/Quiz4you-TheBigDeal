@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    color: #333;
+    background-repeat: space;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#rulesContainer {
+    width: 80%;
+    margin: 0 auto;
+    
+    background: #62ddd393;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: ridge 9px rgb(44, 153, 129);
+    margin-top: 10%;
+}
+
+button {
+    padding: 10px 20px;
+    border: dotted black;
+    border-radius: 5px;
+    background-color: rgb(32, 165, 143);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#startButton {
+    margin-left: 110px;
+
+}
+
+button:hover {
+    background-color: #0d7c38;
+}
+li{
+    font-family: cursive;
+   
+
+}
+span{
+    color: rgb(21, 241, 205);
+    font-weight: bold;
+    
+}
+p{
+    font-family: cursive ;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.gomb {
+    margin-top: 20px;
+    margin-left: 38%;
+}
