@@ -216,6 +216,7 @@ border:double rgb(255, 255, 255) ;
 #questionImage{
     border-color:  black 10px;
     margin: auto;
+    width: auto;
 }
 img{
     border:  black 10%;  
