@@ -1,6 +1,6 @@
 //image: "kep",
 let questions = [
-    {
+     {
         question: "Hány összetevőből áll a hagyományos Mojito koktél ?",    //1
         answers: ["5", "4", "6", "3"],
         correctAnswer: 0, 
@@ -48,7 +48,7 @@ let questions = [
     
     {
         question: "Hol közlekedik a gondola ?",
-        answers: ["levegőben", "föld alatt", "földön", "vizen"],      //2
+        answers: ["levegőben", "föld alatt", "földön", "vízen"],      //2
         correctAnswer: 3
     },
     {
@@ -78,11 +78,11 @@ let questions = [
     },
     {
         question: "Milyen eredetű étel a rokfort sajt ?",
-        answers: ["görög", "francia", "magyar", "olasz"],      //2
+        answers: ["Görög", "Francia", "Magyar", "Olasz"],      //2
         correctAnswer: 1
     },
     {
-        question: "Hog nevezik másképp, amikor megnyomjuk a gombot a fényképezőgépen ?",
+        question: "Hogy nevezik másképp, amikor megnyomjuk a gombot a fényképezőgépen ?",
         answers: ["fókuszálás", "exitálás", "exponálás", "zoomolás"],      //2
         correctAnswer: 2
     },
@@ -235,7 +235,7 @@ let questions = [
         correctAnswer: 3, 
     },
     {
-        question: "Melyikbolygó kapta a nevét a római főistenről?",
+        question: "Melyik bolygó kapta a nevét a római főistenről?",
         answers: ["Vénusz", "Jupiter", "Zeusz", "Szaturnusz"],      //6
         correctAnswer: 1,
         
@@ -265,7 +265,7 @@ let questions = [
     {
         question: "Melyik filmben játszik együtt Bud Spencer és Terence Hill?",    //11
         answers: ["Banános Joe", "Sheriff az égből", "Én a vizilovakkal vagyok", "Nevem: Senki"],
-        correctAnswer: 3, 
+        correctAnswer: 2, 
     },
     {
         question: "Folytassa: „Szita szita péntek, szerelem csütörtök”?",
@@ -302,7 +302,7 @@ let questions = [
     },
     {
         question: "Mely országok találhatók a korábbi Núbia területén?",
-        answers: ["Nigéria-Kamerun", "India-Pakisztán", "Egyiptom-Szaudán", "Irán-Irak"],      //18
+        answers: ["Nigéria-Kamerun", "India-Pakisztán", "Egyiptom-Szudán", "Irán-Irak"],      //18
         correctAnswer: 2,
         
     },
@@ -323,7 +323,7 @@ let questions = [
 
 {
     question: "Melyik levesben NEM található répa?",    
-    answers: ["minestrone", "korhelyleves", "borscs", "hósleves"],
+    answers: ["minestrone", "korhelyleves", "borscs", "húsleves"],
     correctAnswer: 1, 
 },
 {
@@ -722,7 +722,7 @@ let questions = [
 
 {
     question: "Hogy hívják a reszkessetek betörők főszereplőjét?",    
-    answers: ["Dabiel", "Kevin", "George.", "Amadeus"],
+    answers: ["Dabiel", "Kevin", "George", "Amadeus"],
     correctAnswer: 1,
 },
 {
@@ -767,7 +767,7 @@ let questions = [
 
 {
     question: "Melyik ország zászlaja ez?",    
-    answers: ["Kenya", "Szudán", "Szomália.", "Egypt"],
+    answers: ["Kenya", "Szudán", "Szomália", "Egypt"],
     correctAnswer: 0,
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Kenya.svg/1024px-Flag_of_Kenya.svg.png",
 },
@@ -815,7 +815,7 @@ let questions = [
 
 {
     question: "Melyik játékban szerepel Senator Steven Armstrong?",    
-    answers: ["Metal Gear Rising Revengeance", "Halo ", "Gears", "Dead Space"],
+    answers: ["Metal Gear Rising Revengeance", "Halo ", "Steven happy life", "Dead Space"],
     correctAnswer: 0,
 },
 {
@@ -859,8 +859,8 @@ let questions = [
 },
 
 {
-    question: "Melyik kontinens országaKirgizisztán?",    
-    answers: ["Ázsia", "Dél-Amerika", "Európa.", "Afrika"],
+    question: "Melyik kontinens országa Kirgizisztán?",    
+    answers: ["Ázsia", "Dél-Amerika", "Európa", "Afrika"],
     correctAnswer: 0,
 },
 {
@@ -871,7 +871,7 @@ let questions = [
 },
 {
     question: "Mi a műfaja a Szophoklész művének az Oidipusznak?",    
-    answers: ["Tragédia", "Dráma", "Regény", "epigramma"],
+    answers: ["Tragédia", "Dráma", "Regény", "Epigramma"],
     correctAnswer: 0, 
 },
 {
