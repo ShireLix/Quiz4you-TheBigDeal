@@ -511,7 +511,7 @@ let questions = [
     
 },
 {
-    question: "Hány Grammy díjat birtokol Kandrick Lamar amerikai rapper?",    
+    question: "Hány Grammy díjat birtokol Kendrick Lamar amerikai rapper?",    
     answers: ["19", "22", "2", "9"],
     correctAnswer: 1, 
 },
@@ -569,24 +569,13 @@ let questions = [
     correctAnswer: 1,
     image: "https://fbi.cults3d.com/uploaders/38055520/illustration-file/b00d517e-0d7d-444e-b3a7-d438fc795372/trataCapture.png", 
 },
-{
-    question: "Ki ő?",
-    answers: ["Bambuzini Gusinie", "Trullimero Trullicina", "Tree tres Footies", "Brr Brr Patapim"],      
-    correctAnswer: 3,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPoN58x5xuBbHjFCn6NcjmOONCqlVUtJbMvg&s",
-    
-},
+
 {
     question: "Ki játsza Steve-t az Egy Minecraft filmben?",    
     answers: ["Jason Momoa", "Steve Alex", "Jack Black", "Black Jack"],
     correctAnswer: 2, 
 },
-{
-    question: "Mi a neve ennek a híres Yu-Gu-Oh kártyának?",
-    answers: ["Monster Reborn", "Pot of Greed", "Avatar of the pot", "Magikuriboh"],
-    correctAnswer: 1,
-    image: "https://static.wikia.nocookie.net/yugioh/images/4/46/PotofGreed-OW.png/revision/latest?cb=20140615142401",
-},
+
 
 {
     question: "Mi Jayce passive ability neve?(angolul)",    
@@ -600,8 +589,10 @@ let questions = [
     
 },
 {
+
+    //asdasdasd
     question: "Mik Jhin eternáljai?",    
-    answers: ["Electrocute,Conqueror,Fleat Footwork", "Steve Alex", "Grand Finales,Tempo,Fourth Act Surprise", "Grand Finales,Tempo,Fourth Act Surprise"],
+    answers: ["Electrocute/Conqueror/Fleat Footwork", "Conversa Particular/Juntos par Sempre/Tempestade Metaleira", "Bottoms up/Catastrophic Casks/Cask cracker", "Grand Finales/Tempo/Fourth Act Surprise"],
     correctAnswer: 3, 
 },
 {
@@ -807,25 +798,14 @@ let questions = [
 
 
 
-{
-    question: "Ki ő?",    
-    answers: ["Rihanna", "Beyoncé", "Lady Gaga", "Taylor Swift"],
-    correctAnswer: 1,
-    image:"https://resize.elle.fr/article/var/plain_site/storage/images/mode/la-mode-des-stars/beyonce-entre-maisons-de-couture-et-jeunes-createurs-les-premieres-tenues-de-sa-tournee-impressionnent/98866651-1-fre-FR/Beyonce-entre-maisons-de-couture-et-jeunes-createurs-les-premieres-tenues-de-sa-tournee-impressionnent.jpg",
-},
+
 {
     question: "Melyik magyar youtuber érte el leghamarabb az 1M feliratkozót?",
-    answers: ["Heath Ledgar", "Jim Carrey", "George Clooney", "Tom Hanks"], 
-    image:"https://moviekoop.com/Images/Stories/jim-carrey.jpg",     
+    answers: ["Heath Ledgar", "Jim Carrey", "George Clooney", "Tom Hanks"],      
     correctAnswer: 1,
     
 },
-{
-    question: "Melyik híres játék inventory-a ez?",    
-    answers: ["World of Warcraf", "Dayz", "Terraria", "Path of Exile"],
-    correctAnswer: 2, 
-    image:"https://oyster.ignimgs.com/mediawiki/apis.ign.com/terraria/d/db/Inventory.png",
-},
+
 {
     question: "Melyik film főgonosza ő?",
     answers: ["Démonok között", "Aki bújt aki nem", "Freddy vs Jason", "Halálos kitérő"],
@@ -935,12 +915,7 @@ let questions = [
     correctAnswer: 3
   },
 
-  {
-    question: "Melyik hős abilityje ez?", 
-    answers: ["Skarner", "Malphite", "Leona", "Amumu"], 
-    correctAnswer: 3,
-    image:"https://ddragon.leagueoflegends.com/cdn/14.19.1/img/spell/CurseoftheSadMummy.png",
-  },
+  
 
   {
     question: "Melyik Vandal skin ez?", 
@@ -960,8 +935,49 @@ let questions = [
     question: "Kinek az ability-e ez?", 
     answers: ["Cho'Gath", "Gangplank", "Miss Fortune", "Milio"], 
     correctAnswer: 1,
-    image:"https://ddragon.leagueoflegends.com/cdn/14.19.1/img/spell/GangplankW.png",
-  }
+    image:"https://static.wikia.nocookie.net/leagueoflegends/images/4/4d/Gangplank_Parrrley.png/revision/latest/thumbnail/width/360/height/360?cb=20240812215835",
+  },
+
+  {
+    question: "Melyik hős abilityje ez?", 
+    answers: ["Skarner", "Malphite", "Leona", "Amumu"], 
+    correctAnswer: 3,
+    image:"https://static.wikia.nocookie.net/leagueoflegends/images/7/73/Amumu_Bandage_Toss_WR.png/revision/latest/thumbnail/width/360/height/360?cb=20240828211439",
+  },
+
+   {
+    question: "Melyik Vandal skin ez?", 
+    answers: ["Origin", "Magepunk", "Prelude to chaos", "Kurunami"], 
+    correctAnswer: 2,
+    image:"https://static.wikia.nocookie.net/valorant/images/a/a8/Prelude_to_Chaos_Vandal.png/revision/latest?cb=20230711202455",
+  },
+
+  {
+    question: "Ki ő?",    
+    answers: ["Rihanna", "Beyoncé", "Lady Gaga", "Taylor Swift"],
+    correctAnswer: 1,
+    image:"https://imageio.forbes.com/specials-images/imageserve/6760517984921923e8effbcd/0x0.jpg?format=jpg&crop=1736,1737,x834,y79,safe&height=416&width=416&fit=bounds",
+},
+{
+    question: "Melyik híres játék inventory-a ez?",    
+    answers: ["World of Warcraf", "Dayz", "Terraria", "Path of Exile"],
+    correctAnswer: 2, 
+    image:"https://oyster.ignimgs.com/mediawiki/apis.ign.com/terraria/d/db/Inventory.png",
+},
+    {
+        question: "Ki ő?",
+        answers: ["Bambuzini Gusinie", "Trullimero Trullicina", "Tree tres Footies", "Brr Brr Patapim"],      
+        correctAnswer: 3,
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPoN58x5xuBbHjFCn6NcjmOONCqlVUtJbMvg&s",
+        
+    },
+
+    {
+        question: "Mi a neve ennek a híres Yu-Gu-Oh kártyának?",
+        answers: ["Monster Reborn", "Pot of Greed", "Avatar of the pot", "Magikuriboh"],
+        correctAnswer: 1,
+        image: "https://preview.redd.it/poll-pot-of-greed-v0-05scgzq44p6b1.png?width=375&format=png&auto=webp&s=ff6b5612c9305c8f4e3f945f24b91f388d4cc952",
+    },
 ];
 
 
